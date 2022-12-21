@@ -4,6 +4,7 @@
 
 /**
  * @dev Verify this contract on etherscan
+ * Already verified at etherscan: https://goerli.etherscan.io/address/0x3d3C6c0a272Da8bBc75883D1579FbDB594781993#code
  */
 const { run } = require("hardhat");
 
