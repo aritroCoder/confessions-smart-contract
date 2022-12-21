@@ -1,6 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.7;
 
+error ConfessionDapp__NotOwner();
+
 contract ConfessionDapp {
     address public immutable i_deployer;
     string[] public confessions; // store only confessions string in an array
@@ -17,6 +19,13 @@ contract ConfessionDapp {
     function confess(string memory confession) public {
         confessions.push(confession);
         emit newConfession(confession);
+    }
+
+    function clearConfessions() public{
+        if(msg.sender != i_deployer){
+            revert ConfessionDapp__NotOwner();
+        }
+        confessions = new string [](0); // resetting the confessions array [NEVER USED IN PRODUCTION DEPLOYMENT]
     }
 
     /** Getters */
