@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.7;
 
-contract ConfessionDappV1 {
+contract ConfessionDapp {
     address public immutable i_deployer;
     string[] public confessions; // store only confessions string in an array
 
