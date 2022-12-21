@@ -5,7 +5,8 @@
 
 # Confessions Dapp
 
-A Decentralized application working on ethereum or other EVM based chains where any user can post anonymus confessions.
+A Decentralized application working on ethereum or other EVM based chains where any user can post anonymus confessions.<br>
+Find the current deployed version on etherscan: https://goerli.etherscan.io/address/0x66Fe86341089f188Cf6aF5773c235729C8787CB1#code
 
 
 ## Author
